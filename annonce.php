@@ -39,11 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-<a href='index.php' title='back'>Back</a><br>
+<a href='index.html' title='back'>Back</a><br>
 <h1>Ajouter une annonce</h1>
 <form method="POST" action="annonce.php">
-    
-    <!-- <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>"> -->
     
     <div class="form-floating">
         <label for="titre">Titre</label>
