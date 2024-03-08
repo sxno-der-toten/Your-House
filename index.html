@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+<!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo-container">
+          <img src="./assets/logo.png" class="logo" alt="Logo"/>
+      </div>
+      <div class="bouton-content">
+          <h1><span>YourHouse</span></h1>
+      </div>
+      <div class="button-container">
+        <a href="gestion.html" class="button1">Gérer les annonces</a>
+      </div>
+    </nav>
+  </header>
+  <!-- SECTION 1 -->
+  <section class="section1">
+    <div class="sousSection1">
+      <div class="card1" onclick="dropdown('menu1')">
+        <p id="selectedOption" class="placeholder">Type de logement...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu1" class="dropdown-content">
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card1" onclick="dropdown('menu2')">
+        <p id="selectedOption" class="placeholder">Location...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu2" class="dropdown-content">
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card1" onclick="dropdown('menu3')">
+        <p id="selectedOption" class="placeholder">Prix...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu3" class="dropdown-content">
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card1" onclick="dropdown('menu4')">
+        <p id="selectedOption" class="placeholder">Surface...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu4" class="dropdown-content">
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card1" onclick="dropdown('menu5')">
+        <p id="selectedOption" class="placeholder">Pièces...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu5" class="dropdown-content">
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+      <a class="alert" href="">
+        <i class="ri-alarm-warning-line"></i>
+        <div>Alerte</div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- SECTION 2 -->
+<section class="background">
+  <div class="uno">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div>
+  </div>
+  <div class="dos">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div><div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/fc/ba/55/fcba5539ff92e27ee7de828f3fc65bd3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class='button' href="details.html">Plus d'informations</a>
+      </div>
+    </div>
+  </div>  
+</section>
+<!-- FOOTER -->
+<section class="footer">
+  <div class="content">
+      <img class="logo" src="assets/logo.png">
+      <p class="desc">© 2024 Your House, Inc.</p>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
