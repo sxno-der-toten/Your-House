@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Section 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .section1 {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sousSection1 {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 1rem;
+      gap: 1rem;
+    }
+
+    .card {
+      position: relative;
+      width: 10rem;
+     border: solid 1px black;
+     border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 1rem;
+      height: 50%;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      display: none;
+      background-color: white;
+      padding: 0.5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    #selectedOption {
+  font-size: 12px; /* Ajuste la taille de la police selon tes besoins */
+}
+
+/* Style du placeholder */
+#selectedOption.placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Annulation du style de placeholder lorsqu'une option est sélectionnée */
+#selectedOption:not(.placeholder) {
+  font-size: 14px;
+  color: black;
+  font-style: normal;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 50%;
+  border: solid 2px green;
+  padding-inline: 0.5rem;
+  color: black;
+}
+  </style>
 </head>
 <body>
-    
+  <section class="section1">
+    <div class="sousSection1">
+      <div class="card" onclick="dropdown('menu1')">
+        <p id="selectedOption" class="placeholder">Type de logement...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu1" class="dropdown-content">
+          <!-- Contenu du menu déroulant pour la première carte -->
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="dropdown('menu2')">
+        <p id="selectedOption" class="placeholder">Location...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu2" class="dropdown-content">
+          <!-- Contenu du menu déroulant pour la première carte -->
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="dropdown('menu3')">
+        <p id="selectedOption" class="placeholder">Prix...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu3" class="dropdown-content">
+          <!-- Contenu du menu déroulant pour la première carte -->
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="dropdown('menu4')">
+        <p id="selectedOption" class="placeholder">Surface...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu4" class="dropdown-content">
+          <!-- Contenu du menu déroulant pour la première carte -->
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="dropdown('menu5')">
+        <p id="selectedOption" class="placeholder">Pièces...</p>
+        <i class="ri-arrow-right-s-line"></i>
+        <div id="menu5" class="dropdown-content">
+          <!-- Contenu du menu déroulant pour la première carte -->
+          <p onclick="selectOption('Option 1')">Option 1</p>
+          <p onclick="selectOption('Option 2')">Option 2</p>
+          <p onclick="selectOption('Option 3')">Option 3</p>
+        </div>
+      </div>
+      <a class="alert" href="">
+        <i class="ri-alarm-warning-line"></i>
+        <div>Alerte</div>
+      </a>
+      
+     
+    </div>
+  </div>
+</section>
+
+<script>
+  function dropdown(menuId) {
+
+        // Ferme tous les autres menus
+        var allMenus = document.querySelectorAll('.dropdown-content');
+    allMenus.forEach(function(menu) {
+      if (menu.id !== menuId) {
+        menu.style.display = 'none';
+      }
+    });
+
+    var dropdownContent = document.getElementById(menuId);
+    dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+  }
+
+  function selectOption(option) {
+    document.getElementById('selectedOption').innerText = option;
+    toggleDropdown('menu1');
+  }
+</script>
 </body>
 </html>
