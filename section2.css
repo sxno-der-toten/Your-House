@@ -1,0 +1,41 @@
+
+.uno,
+.dos {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+.dos{
+  margin-top: 20px;
+}
+.uno{
+  margin-top: 30px;
+}
+.card {
+  width: 18rem;
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  background-color: rgb(135, 135, 205);
+  
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc; 
+}
+
+.card-body {
+  padding: 1rem; 
+ 
+}
+
+.card-text {
+  color: #333; 
+}
+.background{
+  background-image: url("https://marketplace.canva.com/EAFCO6pfthY/1/0/1600w/canva-blue-green-watercolor-linktree-background-F2CyNS5sQdM.jpg");
+}
